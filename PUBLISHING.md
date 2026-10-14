@@ -1,12 +1,12 @@
 # Publish Finding Farmers
 
-The `github-pages/` folder is a complete static production site. Its live climate model calls Open-Meteo and NASA POWER directly from the visitor's browser, so it does not depend on localhost or a server-side API.
+The `github-pages/` folder is a complete static production site. Its live climate model calls Open-Meteo and NASA POWER directly from the visitor's browser, so it does not depend on localhost or a server-side API. The default GitHub Pages address is live now; attach a purchased domain through the Pages settings when one is available.
 
 ## One-time GitHub setup
 
 1. Create an empty GitHub repository (for example, `findingfarmers-site`) and push this project to its `main` branch.
 2. Open the repository’s **Settings → Pages** and select **GitHub Actions** as the publishing source. The included workflow will deploy `github-pages/` after every push to `main`.
-3. In **Settings → Pages → Custom domain**, enter `findingfarmers.com` *before* changing DNS. GitHub will keep the included `CNAME` file in the published site.
+3. In **Settings → Pages → Custom domain**, enter your purchased domain *before* changing DNS. GitHub will create the required `CNAME` file in the published site.
 4. At the domain registrar, add these four **A** records for `@`:
 
    - `185.199.108.153`
