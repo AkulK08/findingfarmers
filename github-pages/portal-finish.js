@@ -1,3 +1,6 @@
+text.bho.heroTitle='खेती के अगिला कदम।\nअपना भाषा में।';
+text.bho.heroBody='बिहार खातिर जिला के मौसम, फसल के अवस्था आ एह हफ्ता के काम के सलाह।';
+applyLanguage();
 const workspaceGuide=document.createElement('div');
 workspaceGuide.className='workspace-guide';
 workspaceGuide.innerHTML='<article><span>01</span><h4>अपना जिला</h4><p>पाँच उपलब्ध जिला में से अपना इलाका चुनीं।</p></article><article><span>02</span><h4>फसल के अवस्था</h4><p>रोपनी, फूल आ दाना भरला पर जरूरत बदल जाला।</p></article><article><span>03</span><h4>सात दिन के नजर</h4><p>बरखा, तापमान आ खेत के काम एक साथे देखीं।</p></article>';
