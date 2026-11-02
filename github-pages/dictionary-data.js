@@ -1,0 +1,42 @@
+/* Editorial definitions are new paraphrases. Historical locations retain the source's boundaries. */
+window.KISAN_DICTIONARY = {
+  version: '1.0.0', researchedAt: '2026-11-02',
+  sources: {
+    grierson: {title: 'G. A. Grierson · Bihar Peasant Life', date: '1885', url: 'https://archive.org/details/cu31924072688025', note: 'मूल सार्वजनिक-डोमेन पुस्तक। अनुच्छेद संख्या संदर्भ खातिर बा। पुरान जिला के सीमा आज से अलग रहे। देवनागरी रूप संपादकीय सामान्यीकरण बा; मूल रोमन रूप साथे दिहल बा।'},
+    water: {title: 'बिहार लघु जल संसाधन विभाग · आहर–पइन व्यवस्था', date: 'प्रकाशन तारीख उपलब्ध नइखे', url: 'https://betastate.bihar.gov.in/mwrd/DyPageView?PageTitleID=10120', note: 'दक्षिण-मध्य बिहार आ पुरान गया क्षेत्र के जल संचय आ सिंचाई व्यवस्था के विभागीय विवरण।'},
+    cgwb: {title: 'केंद्रीय भूमि जल बोर्ड · गया जिला रिपोर्ट', date: 'रिपोर्ट', url: 'https://www.cgwb.gov.in/old_website/AQM/NAQUIM_REPORT/Bihar/Gaya%20Final.pdf', note: 'मुद्रित पृ. 13 पर आहर आ पइन के परिभाषा आ गया जिला के संदर्भ। PDF viewer के पन्ना गिनती अलग हो सकेला।'},
+    jogira: {title: 'जोगीरा · भोजपुरी शब्दकोश', date: 'ऑनलाइन शब्दकोश', url: 'https://jogira.com/bhojpuri-hindi-dictionary-and-translation/', note: 'भोजपुरी शब्द आ अर्थ के प्रकाशित सूची। एह स्रोत में शब्द खातिर खास जिला नइखे दिहल।'}
+  },
+  places: {
+    gaya: 'गया · जिला रिपोर्ट',
+    'gaya-h': 'गया · 1885 के जिला', 'patna-h': 'पटना · 1885 के जिला', 'saran-h': 'सारण · 1885 के जिला',
+    'shahabad-h': 'शाहाबाद · ऐतिहासिक क्षेत्र', 'champaran-h': 'चंपारण · ऐतिहासिक क्षेत्र',
+    'tirhut-h': 'तिरहुत · ऐतिहासिक क्षेत्र', 'bhagalpur-h': 'दक्षिण भागलपुर · ऐतिहासिक क्षेत्र', 'munger-h': 'दक्षिण मुंगेर · ऐतिहासिक क्षेत्र'
+  },
+  entries: [
+    {id:'ahar',word:'आहर',roman:'ahar',aliases:['अहर'],meaning:'पानी जमा करे वाला घेरल जलाशय।',english:'Embanked water storage basin',category:'पानी आ सिंचाई',language:'regional',places:['gaya'],evidence:'documented',sources:['cgwb','water'],ref:'CGWB, मुद्रित पृ. 13',note:'तीन ओर बाँध आ एक ओर जमीन के ढाल वाला संचय क्षेत्र। स्रोत गया के संदर्भ देला; ई शब्द खाली गया के बा, अइसन दावा नइखे।',related:['pyne']},
+    {id:'pyne',word:'पइन',roman:'pyne / pain',aliases:['पईन','पैन'],meaning:'नदी से खेत तक पानी पहुँचावे के नाला।',english:'Irrigation channel',category:'पानी आ सिंचाई',language:'regional',places:['gaya'],evidence:'documented',sources:['cgwb','water'],ref:'CGWB, मुद्रित पृ. 13',note:'आहर से जुड़ल पानी बाँटे के व्यवस्था। अलग लिखाई वाला रूप खोज सुविधा खातिर जोड़ल बा।',related:['ahar','karha']},
+    {id:'langal',word:'लांगल',roman:'lāngal',aliases:['लाङ्गल','langal'],meaning:'हल।',english:'Plough',category:'औजार',language:'regional',places:['gaya-h'],evidence:'historical',sources:['grierson'],ref:'§1, मुद्रित पृ. 1',related:['har','lagna']},
+    {id:'har',word:'हर',roman:'har',aliases:['हल'],meaning:'जोताई के देसी हल।',english:'Country plough',category:'औजार',language:'regional',places:[],evidence:'historical',sources:['grierson'],ref:'§1, मुद्रित पृ. 1',note:'स्रोत एह रूप के सामान्य बिहार प्रयोग बतावेला; खास जिला ना।',related:['langal']},
+    {id:'haris',word:'हरिस',roman:'haris',aliases:[],meaning:'हल के लमहर डाँड़।',english:'Plough beam',category:'औजार',language:'regional',places:['shahabad-h','tirhut-h'],evidence:'historical',sources:['grierson'],ref:'§5, मुद्रित पृ. 1',note:'शाहाबाद आ गंगा के उत्तर के क्षेत्र; तिरहुत के पूर्वी हिस्सा में भी दर्ज।',related:['lagna']},
+    {id:'lagna',word:'लगना',roman:'lagnā',aliases:[],meaning:'हल पकड़े वाला हत्था।',english:'Plough handle',category:'औजार',language:'regional',places:['patna-h','gaya-h','munger-h'],evidence:'historical',sources:['grierson'],ref:'§7, मुद्रित पृ. 2',related:['langal']},
+    {id:'patta',word:'पट्टा',roman:'paṭṭā',aliases:['patta'],meaning:'हल के डाँड़ कसे वाला पच्चर।',english:'Wedge securing plough beam',category:'औजार',language:'regional',places:['gaya-h'],evidence:'historical',sources:['grierson'],ref:'§11, मुद्रित पृ. 2',related:['pata']},
+    {id:'pata',word:'पाटा',roman:'pāṭā',aliases:['pata'],meaning:'हल के डाँड़ कसे वाला पच्चर।',english:'Wedge securing plough beam',category:'औजार',language:'regional',places:['patna-h','tirhut-h'],evidence:'historical',sources:['grierson'],ref:'§11, मुद्रित पृ. 2',note:'ई खास अर्थ पटना आ दक्षिण तिरहुत खातिर दर्ज बा। हर संदर्भ में पाटा के मतलब ई ना होई।',related:['patta']},
+    {id:'samaiya',word:'समैया',roman:'samaiyā',aliases:[],meaning:'जुआ के भीतरी खूंटी।',english:'Inner yoke pin',category:'औजार',language:'regional',places:['gaya-h'],evidence:'historical',sources:['grierson'],ref:'§16, मुद्रित पृ. 3',related:['baraini']},
+    {id:'baraini',word:'बरैनी',roman:'baraini',aliases:[],meaning:'हल के डाँड़ के रोके वाला खूंटी।',english:'Plough retaining peg',category:'औजार',language:'regional',places:['patna-h'],evidence:'historical',sources:['grierson'],ref:'§12, मुद्रित पृ. 3',related:['barhan']},
+    {id:'barhan',word:'बरहन',roman:'barhan',aliases:[],meaning:'हल के डाँड़ के रोके वाला खूंटी।',english:'Plough retaining peg',category:'औजार',language:'regional',places:['saran-h'],evidence:'historical',sources:['grierson'],ref:'§12, मुद्रित पृ. 3',related:['baraini']},
+    {id:'karha',word:'करहा',roman:'karhā',aliases:['karha'],meaning:'खेत में पानी ले जाए वाला नाला।',english:'Field irrigation channel',category:'पानी आ सिंचाई',language:'regional',places:['patna-h','saran-h','shahabad-h'],evidence:'historical',sources:['grierson'],ref:'§954, मुद्रित पृ. 211',related:['pyne','singha']},
+    {id:'singha',word:'सिंघा',roman:'singhā',aliases:[],meaning:'सिंचाई के पानी वाला नाला।',english:'Irrigation channel',category:'पानी आ सिंचाई',language:'regional',places:['bhagalpur-h'],evidence:'historical',sources:['grierson'],ref:'§954, मुद्रित पृ. 211',related:['karha']},
+    {id:'alang',word:'अलंग',roman:'alang',aliases:[],meaning:'पानी के हौद के बीच ऊँच मेड़।',english:'Raised bank between reservoirs',category:'पानी आ सिंचाई',language:'regional',places:['patna-h'],evidence:'historical',sources:['grierson'],ref:'§953, मुद्रित पृ. 211',related:['ahar']},
+    {id:'koran',word:'कोरन',roman:'koran',aliases:[],meaning:'बढ़त मोटा अनाज में बीच के जोताई।',english:'Intercultivation of growing millets',category:'खेत के काम',language:'regional',places:['gaya-h','champaran-h'],evidence:'historical',sources:['grierson'],ref:'§824, मुद्रित पृ. 172',related:['har']},
+    {id:'manda',word:'मंडा',roman:'maṇḍā',aliases:['manda'],meaning:'गेहूं खातिर दर्ज क्षेत्रीय नाम।',english:'Wheat',category:'फसल आ उपज',language:'regional',places:['gaya-h'],evidence:'historical',sources:['grierson'],ref:'§955, मुद्रित पृ. 212',related:[]},
+    {id:'inar',word:'इनार',roman:'inār',aliases:['inar','कुआँ','कुआं'],meaning:'कुआँ।',english:'Well',category:'पानी आ सिंचाई',language:'bho',places:[],evidence:'lexicon',sources:['jogira'],ref:'इनार',related:['pyne']},
+    {id:'usar',word:'ऊसर',roman:'ūsar',aliases:['उसर','usar'],meaning:'अनुपजाऊ जमीन।',english:'Unproductive land',category:'माटी आ जमीन',language:'bho',places:[],evidence:'lexicon',sources:['jogira'],ref:'उसर / ऊसर',related:['od','kando']},
+    {id:'od',word:'ओद',roman:'od',aliases:['नम','गीला'],meaning:'गीला भा नमी वाला।',english:'Damp; wet',category:'माटी आ जमीन',language:'bho',places:[],evidence:'lexicon',sources:['jogira'],ref:'ओद',related:['kando']},
+    {id:'kando',word:'कांदो',roman:'kāndo',aliases:['काँदो','kando','कीचड़'],meaning:'कीचड़।',english:'Mud',category:'माटी आ जमीन',language:'bho',places:[],evidence:'lexicon',sources:['jogira'],ref:'कांदो',related:['od']},
+    {id:'kudari',word:'कुदारी',roman:'kudārī',aliases:['kudari','कुदाल'],meaning:'खोदाई के कुदाल।',english:'Hoe; digging tool',category:'औजार',language:'bho',places:[],evidence:'lexicon',sources:['jogira'],ref:'कुदारी',related:['har']},
+    {id:'kolhuar',word:'कोल्हुआड़',roman:'kolhuāṛ',aliases:['kolhuar','गन्ना','ईख'],meaning:'गन्ना पेरे के जगह।',english:'Sugarcane crushing site',category:'खेत के काम',language:'bho',places:[],evidence:'lexicon',sources:['jogira'],ref:'कोल्हुआड़',related:[]},
+    {id:'khukhuri',word:'खुखुड़ी',roman:'khukhuṛī',aliases:['खुखुड़ी','khukhuri','मकई','मक्का'],meaning:'दाना निकसल भुट्टा।',english:'Corn cob without kernels',category:'फसल आ उपज',language:'bho',places:[],evidence:'lexicon',sources:['jogira'],ref:'खुखुड़ी',related:[]},
+    {id:'kera',word:'केरा',roman:'kerā',aliases:['kera','केला'],meaning:'केला।',english:'Banana',category:'फसल आ उपज',language:'bho',places:[],evidence:'lexicon',sources:['jogira'],ref:'केरा',related:[]}
+  ]
+};
